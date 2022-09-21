@@ -169,7 +169,167 @@ body, html {
 
 .electric1 {
   background-image: 
-    radial-gradient(#d6ff00, #c9ff00, #b0ff00, #7cff00, #3cff00)
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.normal {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/normal.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.normal1 {
+  
+}
+
+.ice {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/ice.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ice1 {
+  background-image: 
+    radial-gradient(	#00ffff, 	#6cfdfd, #38e7f8, #00cfee, #77eef9)
+  ;
+}
+
+.fighting {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/fighting.jpeg');
+}
+
+.fighting1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.poison {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/poison.webp');
+}
+
+.poison1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.ground {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/ground.jpg');
+}
+
+.ground1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.flying {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/flying.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flying1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+  
+}
+
+.psychic {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/psychic.jpeg');
+}
+
+.psychic1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.bug {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/bug.jpeg');
+  background-size: cover;
+}
+
+.bug1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.rock {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/rock.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rock1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.ghost {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/ghost.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ghost1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.dark {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/dark.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.dragon {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/dragon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dragon1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ; 
+}
+
+.steel {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/steel.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.steel1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
+  ;
+}
+
+.fairy {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/fairy1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fairy1 {
+  background-image: 
+    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
   ;
 }
 
