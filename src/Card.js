@@ -21,13 +21,11 @@ function Card({pokemon}) {
     //     }
     // })
 
-
-
     if(pokemon) {
         return (
             <div className="main-card">
 
-                <div className='card-name'>
+                <div className={`card-name ${pokemon.types[0].type.name}` + 1}>
                     <div className='card-name-text'>
                         <h3>{pokemon.name}</h3>
                         <h4>{pokemon.types[0].type.name}</h4>
@@ -41,14 +39,14 @@ function Card({pokemon}) {
                     <img src={pokemon.sprites.front_default} alt='pokemon'/>
                 </div> */}
 
-                <div className='card-ability'>
+                <div className={`card-ability ${pokemon.types[0].type.name}` + 1}>
                     <p>
                         {pokemon.abilities[0].ability.name}
                     </p>
 
                 </div>
 
-                <div className='card-attack'>
+                <div className={`card-attack ${pokemon.types[0].type.name}` + 1}>
                     <p>{pokemon.moves[0].move.name}</p>
                 </div>
             </div>

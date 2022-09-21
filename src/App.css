@@ -10,8 +10,8 @@ body, html {
   background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/pokestadium.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  height: 100%;
+  background-size: cover;
+  width: 100%;
   /* margin: 2rem; */
 }
 
@@ -22,11 +22,6 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/pokestadium.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-  /* background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/pokestadium.jpg'); */
 
 }
 
@@ -128,48 +123,71 @@ body, html {
 }
 
 .water {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/Water-Background-1.jpeg');
+  /* background-image: 
+    radial-gradient(#064273, #76b6c4, #7fcdff, #1da2d8, #def3f6 )
+  ; */
+}
+
+.water1 {
   background-image: 
     radial-gradient(#064273, #76b6c4, #7fcdff, #1da2d8, #def3f6 )
   ;
 }
 
 .fire {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/fire.jpeg');
+  /* background-image: 
+    radial-gradient(#a10000, #ea2300, #ff8100, #f25500, #d80000)
+  ; */
+}
+
+.fire1 {
   background-image: 
     radial-gradient(#a10000, #ea2300, #ff8100, #f25500, #d80000)
   ;
 }
-
 .grass {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/grass.jpeg');
+  /* background-image: 
+    radial-gradient(#77a908, #398300, #104d06, #258707, #79d671)
+  ; */
+}
+
+.grass1 {
   background-image: 
     radial-gradient(#77a908, #398300, #104d06, #258707, #79d671)
   ;
 }
 
 .electric {
+  background-image: url('/Users/gabrielshalitmontagne/Documents/GitHub/PokeDex/src/Images/electric.jpg');
+  /* background-image: 
+    radial-gradient(#d6ff00, #c9ff00, #b0ff00, #7cff00, #3cff00)
+  ; */
+}
+
+.electric1 {
   background-image: 
     radial-gradient(#d6ff00, #c9ff00, #b0ff00, #7cff00, #3cff00)
   ;
 }
 
 .card-ability {
-  /* background-color: pink; */
   display: flex;
   flex: 1 1 20%;
   width: 90%;
   margin: 0 auto;
   justify-content: center;
-  background-image: 
-    linear-gradient(to bottom right, #ff0000, #cc0000, #3b4cca, #ffde00, #b3a125)
-  ;
+  align-items: center;
+  border-bottom: 1px solid black;
 }
 
 .card-attack {
-  background-image: 
-     linear-gradient(to bottom right, #ff0000, #cc0000, #3b4cca, #ffde00, #b3a125)
-  ;
   display: flex;
   flex: 1 1 20%;
   width: 90%;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
 }
