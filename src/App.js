@@ -2,6 +2,32 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './Card';
 import Search from './Search';
+import IconButton from "@mui/material/IconButton";
+import TextField from "@mui/material/TextField";
+import SearchIcon from '@mui/icons-material/Search';
+
+// import SearchBar from './components/poke_search.js'
+
+const SearchBar = ({setQuery}) => (
+  <form>
+    <TextField
+      id="search-bar"
+      className="text"
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          setQuery(e.target.value);
+      }
+      }}
+      label="Enter the name of the Pokemon"
+      variant="outlined"
+      placeholder="Pokemon name"
+      size="small"
+    />
+    <IconButton type="submit" aria-label="search">
+      <SearchIcon style={{ fill: "red" }} />
+    </IconButton>
+  </form>
+);
 
 function App() {
 
