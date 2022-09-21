@@ -1,19 +1,14 @@
-import './App.css';
-
-import { useState } from "react";
 import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-import SearchIcon from '@mui/icons-material/Search';
 
-// import SearchBar from './components/poke_search.js'
-
-const SearchBar = ({setQuery}) => (
+const SearchBar = ({setSearchQuery}) => (
   <form>
     <TextField
       id="search-bar"
       className="text"
       onInput={(e) => {
-        setQuery(e.target.value);
+        setSearchQuery(e.target.value);
       }}
       label="Enter the name of the Pokemon"
       variant="outlined"
@@ -26,15 +21,4 @@ const SearchBar = ({setQuery}) => (
   </form>
 );
 
-function App() {
-  const [query, setQuery] = useState("");
-
-  return (
-    <div>
-      <SearchBar query={query} setQuery={setQuery} />
-      {query}
-    </div>
-  );
-}
-
-export default App;
+export default SearchBar;
