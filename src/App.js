@@ -12,8 +12,10 @@ const SearchBar = ({setQuery}) => (
     <TextField
       id="search-bar"
       className="text"
-      onInput={(e) => {
-        setQuery(e.target.value);
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          setQuery(e.target.value);
+      }
       }}
       label="Enter the name of the Pokemon"
       variant="outlined"
