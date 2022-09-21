@@ -50,7 +50,7 @@ function Card({pokemon}) {
         )
     } else {
         return (
-            <h1>Nothing</h1>
+            <h1>Please Search For A Pokemon</h1>
         )
     }
 }
