@@ -1,7 +1,14 @@
 import './App.css';
+import { useEffect, useState } from 'react'
 
 function Card({pokemon}) {
         
+    const [type, setType] = useState({
+        'water' : 'card-img-water',
+        'fire' : 'card-img-fire',
+        'grass' : 'card-img-grass',
+        'electric' : 'card-img-electric'
+    })
 
     // console.log(pokemon.abilities[0].ability.name)
     
@@ -25,7 +32,7 @@ function Card({pokemon}) {
                     <h4>{pokemon.types[0].type.name}</h4>
                 </div>
 
-                <div className='card-img'>
+                <div className={`card-img ${pokemon.types[0].type.name}`}>
                     <img src={pokemon.sprites.front_default} alt='pokemon'/>
                 </div>
 

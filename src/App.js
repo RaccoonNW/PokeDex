@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Pokedex from './Pokedex';
+import Card from './Card';
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
 
 
   function handleClick() {
-    fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+    fetch('https://pokeapi.co/api/v2/pokemon/charizard')
     .then((r) => r.json())
     .then((data) => setPokemon(data))
   }
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Pokedex pokemon={pokemon}/>
+      <Card pokemon={pokemon}/>
       <button onClick={handleClick}>Pokemon!</button>
     </div>
   );

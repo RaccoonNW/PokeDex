@@ -9,13 +9,21 @@ body {
   margin: 2rem;
 }
 
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
 .main-card {
   max-width: 400px;
   margin: 0;
   padding: 1;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: greenyellow;
+  /* background-image: 
+    linear-gradient(to right, red, yellow, green)
+  ; */
   /* position: absolute; */
   overflow: hidden;
   box-shadow: 0 4px 8px 0;
@@ -25,9 +33,12 @@ body {
   border-radius: 10px;
   flex-direction: column;
   justify-content: center;
+  justify-self: center;
+  align-self: center;
   cursor: pointer;
   width: 40%;
-  height:500px;
+  height: 500px;
+  background-color: rgb(173, 249, 21);
 
 }
 
@@ -55,12 +66,38 @@ body {
   /* position: relative; */
   display: flex;
   flex: 1 1 40%;
-  background-color: yellow;
+  /* background-image: 
+    radial-gradient(red, yellow, green)
+  ; */
   justify-self: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
+}
+
+.water {
+  background-image: 
+    radial-gradient(#064273, #76b6c4, #7fcdff, #1da2d8, #def3f6 )
+  ;
+}
+
+.fire {
+  background-image: 
+    radial-gradient(#a10000, #ea2300, #ff8100, #f25500, #d80000)
+  ;
+}
+
+.grass {
+  background-image: 
+    radial-gradient(#77a908, #398300, #104d06, #258707, #79d671)
+  ;
+}
+
+.electric {
+  background-image: 
+    radial-gradient(#d6ff00, #c9ff00, #b0ff00, #7cff00, #3cff00)
+  ;
 }
 
 .card-ability {
