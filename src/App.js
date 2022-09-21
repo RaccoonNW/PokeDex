@@ -20,8 +20,12 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Card pokemon={pokemon}/>
-      <Search setSearch={setSearch} handleClick={handleClick}/>
+      <div className='searchbar-wrapper'>
+        <Search setSearch={setSearch} handleClick={handleClick}/>
+      </div>
+      <div className='card-wrapper'>
+        <Card pokemon={pokemon}/>
+      </div>
     </div>
   );
 }

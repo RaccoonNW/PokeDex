@@ -28,13 +28,18 @@ function Card({pokemon}) {
             <div className="main-card">
 
                 <div className='card-name'>
-                    <h3>{pokemon.name}</h3>
-                    <h4>{pokemon.types[0].type.name}</h4>
+                    <div className='card-name-text'>
+                        <h3>{pokemon.name}</h3>
+                        <h4>{pokemon.types[0].type.name}</h4>
+                    </div>
+                    <div className={`card-img ${pokemon.types[0].type.name}`}>
+                        <img src={pokemon.sprites.front_default} alt='pokemon'/>
+                    </div>
                 </div>
 
-                <div className={`card-img ${pokemon.types[0].type.name}`}>
+                {/* <div className={`card-img ${pokemon.types[0].type.name}`}>
                     <img src={pokemon.sprites.front_default} alt='pokemon'/>
-                </div>
+                </div> */}
 
                 <div className='card-ability'>
                     <p>
@@ -50,7 +55,9 @@ function Card({pokemon}) {
         )
     } else {
         return (
-            <h1>Please Search For A Pokemon</h1>
+            <div>
+                
+            </div>
         )
     }
 }
