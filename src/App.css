@@ -39,6 +39,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 50px;
   background-color: orange;
@@ -53,15 +54,16 @@ body, html {
   justify-content: center;
   align-items: center;
   align-self: center;
-  flex-direction: column;
+  flex-direction: row;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 3%;
+  justify-content: space-evenly;
   /* margin-bottom: 25%; */
 }
 
 .main-card {
-  opacity: .5;
+  /* opacity: .5; */
   max-width: 400px;
   margin: 0;
   padding: 1;
@@ -82,15 +84,15 @@ body, html {
   justify-self: center;
   align-self: center;
   cursor: pointer;
-  width: 30%;
-  height: 80%;
+  width: 22%;
+  height: 60%;
   background-color: rgb(173, 249, 21);
   margin-bottom: 20%;
 
 }
 
 .main-card:hover {
-  opacity: 1;
+  /* opacity: 1; */
   box-shadow: 0 8px 16px 0;
 }
 
@@ -150,7 +152,7 @@ body, html {
 
 .water1 {
   background-image: 
-    radial-gradient(#064273, #76b6c4, #7fcdff, #1da2d8, #def3f6 )
+    radial-gradient(#def3f6, #76b6c4, #7fcdff, #1da2d8, #064273 )
   ;
 }
 
@@ -175,7 +177,7 @@ body, html {
 
 .grass1 {
   background-image: 
-    radial-gradient(#77a908, #398300, #104d06, #258707, #79d671)
+    linear-gradient(#77a908, #398300, #104d06, #258707, #79d671)
   ;
 }
 
@@ -383,4 +385,25 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+
+.progress1 {
+  height: 1.5em;
+  width: 100%;
+  background-color: #c9c9c9;
+  position: relative;
+}
+.progress1:before {
+  content: attr(data-label);
+  font-size: 0.8em;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  left: 0;
+  right: 0;
+}
+.progress1 .value {
+  background-color: #7cc4ff;
+  display: inline-block;
+  height: 100%;
 }
