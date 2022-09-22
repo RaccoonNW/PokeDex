@@ -14,6 +14,7 @@ function App() {
   const [pokemonRight, setPokemonRight] = useState('')
   const [searchRight, setSearchRight] = useState()
   const [error, setError] = useState()
+  const [hide, setHide] = useState(true)
 
 
   function handleClickLeft(e) {
@@ -47,11 +48,10 @@ function App() {
       </div>
         <div className='card-wrapper'>
           <Card pokemon={pokemonLeft}/>
+          <div className='battle-wrapper' hidden={hide}>
+            <Battle pokemonLeft={pokemonLeft} pokemonRight={pokemonRight} setHide={setHide} />
+          </div>
           <Card pokemon={pokemonRight}/>
-          <Battle pokemonLeft={pokemonLeft} pokemonRight={pokemonRight} />
-        </div>
-        <div className='battle-wrapper'>
-          <Battle pokemonLeft={pokemonLeft} pokemonRight={pokemonRight} />
         </div>
     </div>
   );

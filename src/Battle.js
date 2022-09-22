@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react'
+import TeamRocket from './Images/TeamRocket.png'
 
-function Battle({pokemonLeft, pokemonRight}) {
+function Battle({pokemonLeft, pokemonRight, setHide}) {
 
     let battleWinner
 
     if(pokemonLeft && pokemonRight) {
         fight(pokemonLeft, pokemonRight)
     }
-    
-    // function test(pokemonLeft, pokemonRight) {
-    //     return (
-    //         thing = 8
-    //     )
-    // }
 
     function score(pokemon) {
         let hp = pokemon.stats[0].base_stat;
@@ -41,35 +36,18 @@ function Battle({pokemonLeft, pokemonRight}) {
         } else {
             battleWinner = "Didn't work!"
         }
-    
-        // switch (scoreLeft && scoreRight) {
-        //   case (scoreLeft < scoreRight):
-        //     battleWinner = 'Right Wins!'
-        //   case (scoreLeft > scoreRight):
-        //     battleWinner = 'Left Wins!'
-        //   case (scoreLeft === scoreRight):
-        //     battleWinner = 'Right Wins!'
-        //   default:
-        //     battleWinner = 'It did not work!'
-        // }
+        setHide(false)
       }
 
-    //   useEffect(() => {
-    //     fight(pokemonLeft, pokemonRight)
-    //   }, [pokemonLeft, pokemonRight])
-
-    //   if(pokemonLeft && pokemonRight) {
-    //       fight(pokemonLeft, pokemonRight)
-    //   }
-
       return (
-        <div>
-            <h1>
-                {battleWinner}
-            </h1>
-
+        <div className='winner-div' hidden={true}>
+            <div className='winner-text'>
+                <h1>
+                    {battleWinner}
+                </h1>
+                <img src={TeamRocket} />
+            </div>
         </div>
-
       )
 }
 
