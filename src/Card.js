@@ -7,6 +7,12 @@ function Card({pokemon}) {
 
     if(pokemon) {
         pokeName = capitalizeFirstLetter(pokemon.name)
+        let hp = pokemon.stats[0].base_stat;
+        let attack = pokemon.stats[1].base_stat;
+        let defense = pokemon.stats[2].base_stat;
+        let specialAttack = pokemon.stats[3].base_stat;
+        let specialDefense = pokemon.stats[4].base_stat;
+        let speed = pokemon.stats[5].base_stat;
     }
 
     function capitalizeFirstLetter(string) {
