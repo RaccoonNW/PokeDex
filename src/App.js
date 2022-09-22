@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './Card';
 import Search from './Search';
+import Battle from './Battle';
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 import SearchIcon from '@mui/icons-material/Search';
@@ -38,7 +39,6 @@ function App() {
 
 
 
-
   return (
     <div className="wrapper">
       <div className='searchbar-wrapper'>
@@ -48,7 +48,11 @@ function App() {
         <div className='card-wrapper'>
           <Card pokemon={pokemonLeft}/>
           <Card pokemon={pokemonRight}/>
-        </div> 
+          <Battle pokemonLeft={pokemonLeft} pokemonRight={pokemonRight} />
+        </div>
+        <div className='battle-wrapper'>
+          <Battle pokemonLeft={pokemonLeft} pokemonRight={pokemonRight} />
+        </div>
     </div>
   );
 }
