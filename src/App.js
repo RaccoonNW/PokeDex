@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Card from './Card';
 import Search from './Search';
 import Battle from './Battle';
-import IconButton from "@mui/material/IconButton";
-import TextField from "@mui/material/TextField";
-import SearchIcon from '@mui/icons-material/Search';
+// import IconButton from "@mui/material/IconButton";
+// import TextField from "@mui/material/TextField";
+// import SearchIcon from '@mui/icons-material/Search';
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
   const [searchLeft, setSearchLeft] = useState()
   const [pokemonRight, setPokemonRight] = useState('')
   const [searchRight, setSearchRight] = useState()
-  const [error, setError] = useState()
+  // const [error, setError] = useState()
   const [hide, setHide] = useState(true)
 
 

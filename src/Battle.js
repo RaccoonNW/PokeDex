@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 import TeamRocket from './Images/TeamRocket.png'
 
 function Battle({pokemonLeft, pokemonRight, setHide}) {
@@ -22,7 +22,7 @@ function Battle({pokemonLeft, pokemonRight, setHide}) {
       function fight(pokemonLeft, pokemonRight) {
         let scoreLeft = score(pokemonLeft)
         let scoreRight = score(pokemonRight)
-        let winner
+        // let winner
 
         console.log(scoreLeft, scoreRight)
         if(scoreLeft < scoreRight) {
@@ -46,7 +46,7 @@ function Battle({pokemonLeft, pokemonRight, setHide}) {
                     {battleWinner}
                 </h1>
             </div>
-                <img src={TeamRocket} />
+                <img src={TeamRocket} alt='Team Rocket' />
         </div>
       )
 }
