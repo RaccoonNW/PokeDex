@@ -1,7 +1,7 @@
 import './App.css';
 // import { useEffect, useState } from 'react'
 
-function Card({pokemon}) {
+function Card({ pokemon }) {
         
     let pokeName
     let hp

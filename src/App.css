@@ -39,6 +39,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 50px;
   background-color: orange;
@@ -53,10 +54,11 @@ body, html {
   justify-content: center;
   align-items: center;
   align-self: center;
-  flex-direction: column;
+  flex-direction: row;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 3%;
+  justify-content: space-evenly;
   /* margin-bottom: 25%; */
 }
 
@@ -82,8 +84,8 @@ body, html {
   justify-self: center;
   align-self: center;
   cursor: pointer;
-  width: 30%;
-  height: 80%;
+  width: 22%;
+  height: 60%;
   background-color: rgb(173, 249, 21);
   margin-bottom: 20%;
 
