@@ -134,6 +134,7 @@ body, html {
 
 .card-img {
   width: 90%;
+  height: 90%;
   display: flex;
   flex: 1 1 35%;
   justify-self: center;
@@ -410,6 +411,7 @@ body, html {
 
 .winner-div {
   display: flex;
+  flex-direction: column;
   align-items: center;
   align-content: center;
   align-self: center;
@@ -424,13 +426,16 @@ body, html {
   text-align: center;
 }
 
-.winner-div h1 {
-  align-self: center;
-  padding-right: 15%;
-}
-
 .winner-div img {
   height: 400px;
   padding-bottom: 35%;
   padding-right: 24%;
+}
+
+.winner-text {
+  padding-right: 30%;
+  padding-bottom: 15%;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blue;
 }

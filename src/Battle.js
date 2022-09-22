@@ -45,8 +45,8 @@ function Battle({pokemonLeft, pokemonRight, setHide}) {
                 <h1>
                     {battleWinner}
                 </h1>
-                <img src={TeamRocket} />
             </div>
+                <img src={TeamRocket} />
         </div>
       )
 }
