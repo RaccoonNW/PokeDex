@@ -6,41 +6,24 @@ import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 import SearchIcon from '@mui/icons-material/Search';
 
-// import SearchBar from './components/poke_search.js'
-
-const SearchBar = ({setQuery}) => (
-  <form>
-    <TextField
-      id="search-bar"
-      className="text"
-      onKeyDown={(e) => {
-        if (e.key === "Enter") {
-          setQuery(e.target.value);
-      }
-      }}
-      label="Enter the name of the Pokemon"
-      variant="outlined"
-      placeholder="Pokemon name"
-      size="small"
-    />
-    <IconButton type="submit" aria-label="search">
-      <SearchIcon style={{ fill: "red" }} />
-    </IconButton>
-  </form>
-);
-
 function App() {
 
-  const [pokemon, setPokemon] = useState()
+  const [pokemon, setPokemon] = useState('')
   const [search, setSearch] = useState()
+  const [error, setError] = useState()
 
 
   function handleClick(e) {
-    e.preventDefault()
+    // e.preventDefault()
     fetch(`https://pokeapi.co/api/v2/pokemon/${search}`)
     .then((r) => r.json())
     .then((data) => setPokemon(data))
+    .catch(err => {
+      setError('Pokemon Not Found - Please Try Again')
+    })
   }
+
+
 
 
 
@@ -49,9 +32,17 @@ function App() {
       <div className='searchbar-wrapper'>
         <Search setSearch={setSearch} handleClick={handleClick}/>
       </div>
-      <div className='card-wrapper'>
-        <Card pokemon={pokemon}/>
-      </div>
+
+      {(error === 'Pokemon Not Found - Please Try Again')
+          ?
+        <div className='error-div'>
+          {error}
+        </div>
+          :
+        <div className='card-wrapper'>
+          <Card pokemon={pokemon}/>
+        </div> 
+      }
     </div>
   );
 }

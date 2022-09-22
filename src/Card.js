@@ -3,23 +3,16 @@ import { useEffect, useState } from 'react'
 
 function Card({pokemon}) {
         
-    const [type, setType] = useState({
-        'water' : 'card-img-water',
-        'fire' : 'card-img-fire',
-        'grass' : 'card-img-grass',
-        'electric' : 'card-img-electric'
-    })
+    let pokeName
 
-    // console.log(pokemon.abilities[0].ability.name)
-    
+    if(pokemon) {
+        pokeName = capitalizeFirstLetter(pokemon.name)
+    }
 
-    // const pokemonMoves = pokemon.moves.map((move) => {
-    //     if(move) {
-    //         return (
-    //             <li>{move.name}</li>
-    //         )
-    //     }
-    // })
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
 
     if(pokemon) {
         return (
@@ -27,7 +20,7 @@ function Card({pokemon}) {
 
                 <div className={`card-name ${pokemon.types[0].type.name}` + 1}>
                     <div className='card-name-text'>
-                        <h3>{pokemon.name}</h3>
+                        <h3>{pokeName}</h3>
                         <h4>{pokemon.types[0].type.name}</h4>
                     </div>
                     <div className={`card-img ${pokemon.types[0].type.name}`}>
