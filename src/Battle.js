@@ -64,9 +64,9 @@ function Battle({pokemonLeft, pokemonRight}) {
 
       return (
         <div>
-            <p>
+            <h1>
                 {battleWinner}
-            </p>
+            </h1>
 
         </div>
 
