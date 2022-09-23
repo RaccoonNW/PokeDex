@@ -87,9 +87,10 @@ body, html {
   cursor: pointer;
   width: 22%;
   height: 80%;
-  background-color: rgb(173, 249, 21);
+  background: linear-gradient(215deg,#37474f, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #424242, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #90a4ae, rgba(0,0,255,0) 80%);
   margin-bottom: 20%;
-
 }
 
 .main-card:hover {
