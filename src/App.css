@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,9 +45,10 @@ body, html {
   justify-content: space-evenly;
   width: 100%;
   height: 50px;
-  background-color: orange;
-  margin: 0;
-
+  background: linear-gradient(215deg,#0d47a1 , rgba(255,0,0,0) 65%),
+            linear-gradient(125deg, #b71c1c, rgba(0,255,0,0) 65%),
+            linear-gradient(340deg, rgba(0,0,255,0.9), rgba(0,0,255,0) 80%);
+  padding-top: 3px;
 }
 
 .card-wrapper {
@@ -86,9 +90,10 @@ body, html {
   cursor: pointer;
   width: 22%;
   height: 80%;
-  background-color: rgb(173, 249, 21);
+  background: linear-gradient(215deg,#37474f, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #424242, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #90a4ae, rgba(0,0,255,0) 80%);
   margin-bottom: 20%;
-
 }
 
 .main-card:hover {
@@ -152,9 +157,9 @@ body, html {
 }
 
 .water1 {
-  background-image: 
-    radial-gradient(#def3f6, #76b6c4, #7fcdff, #1da2d8, #064273 )
-  ;
+  background: linear-gradient(215deg,#1da2d8, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #039be5, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #1da2d8, rgba(0,0,255,0) 80%);
 }
 
 .fire {
@@ -165,9 +170,9 @@ body, html {
 }
 
 .fire1 {
-  background-image: 
-    radial-gradient(#a10000, #ea2300, #ff8100, #f25500, #d80000)
-  ;
+  background: linear-gradient(215deg,#f25500, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #d80000, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #ff8100, rgba(0,0,255,0) 80%);
 }
 .grass {
   background-image: url('./Images/grass.jpeg');
@@ -177,9 +182,9 @@ body, html {
 }
 
 .grass1 {
-  background-image: 
-    linear-gradient(#77a908, #398300, #104d06, #258707, #79d671)
-  ;
+  background: linear-gradient(215deg,#398300, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #258707, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #79d671, rgba(0,0,255,0) 80%);
 }
 
 .electric {
@@ -190,9 +195,9 @@ body, html {
 }
 
 .electric1 {
-  background-image: 
-    radial-gradient(#cfff0b, #dbff49, #e6ff80, #f1ffb9, #fcffef)
-  ;
+  background: linear-gradient(215deg,#f4ff81, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #ffd600, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #e6ff80, rgba(0,0,255,0) 80%);
 }
 
 .normal {
@@ -213,9 +218,9 @@ body, html {
 }
 
 .ice1 {
-  background-image: 
-    radial-gradient(	#00ffff, 	#6cfdfd, #38e7f8, #00cfee, #77eef9)
-  ;
+  background: linear-gradient(215deg,#1da2d8, rgba(255,0,0,0) 65%),
+  linear-gradient(125deg, #7fcdff, rgba(0,255,0,0) 65%),
+  linear-gradient(340deg, #76b6c4, rgba(0,0,255,0) 80%);
 }
 
 .fighting {
@@ -436,6 +441,10 @@ body, html {
   padding-right: 30%;
   padding-bottom: 15%;
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: blue;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 26pt;
+  color: #f25500;
+  background: -webkit-linear-gradient(#ff6d00, #ffab00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
