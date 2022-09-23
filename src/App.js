@@ -13,12 +13,10 @@ function App() {
   const [searchLeft, setSearchLeft] = useState()
   const [pokemonRight, setPokemonRight] = useState('')
   const [searchRight, setSearchRight] = useState()
-  // const [error, setError] = useState()
   const [hide, setHide] = useState(true)
 
 
   function handleClickLeft(e) {
-    // e.preventDefault()
     fetch(`https://pokeapi.co/api/v2/pokemon/${searchLeft.toLowerCase()}`)
     .then((r) => r.json())
     .then((data) => setPokemonLeft(data))
@@ -28,7 +26,6 @@ function App() {
   }
 
   function handleClickRight(e) {
-    // e.preventDefault()
     fetch(`https://pokeapi.co/api/v2/pokemon/${searchRight.toLowerCase()}`)
     .then((r) => r.json())
     .then((data) => setPokemonRight(data))

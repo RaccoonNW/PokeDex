@@ -1,4 +1,3 @@
-// import { useEffect, useState } from 'react'
 import TeamRocket from './Images/TeamRocket.png'
 
 function Battle({pokemonLeft, pokemonRight, setHide}) {

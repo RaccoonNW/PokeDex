@@ -1,6 +1,4 @@
 import './App.css';
-// import { useEffect, useState } from 'react'
-
 function Card({ pokemon }) {
         
     let pokeName
@@ -39,11 +37,6 @@ function Card({ pokemon }) {
                         <img src={pokemon.sprites.front_default} alt='pokemon'/>
                     </div>
                 </div>
-
-                {/* <div className={`card-img ${pokemon.types[0].type.name}`}>
-                    <img src={pokemon.sprites.front_default} alt='pokemon'/>
-                </div> */}
-
                 <div className={`card-ability ${pokemon.types[0].type.name}` + 1}>
                     <table>
                         <tr>
@@ -59,11 +52,6 @@ function Card({ pokemon }) {
                             <th><progress className='progress' id="speed" value={speed} max="200"></progress></th>
                         </tr>
                     </table>
-                    
-                    {/* <p>
-                        {pokemon.abilities[0].ability.name}
-                    </p> */}
-
                 </div>
 
                 <div className={`card-attack ${pokemon.types[0].type.name}` + 1}>
@@ -77,7 +65,6 @@ function Card({ pokemon }) {
                             <th><progress className='progress' background="yellow" color='yellow' id="special-defense" value={specialDefense} max="250"></progress></th>
                         </tr>
                     </table>
-                    {/* <p>{pokemon.moves[0].move.name}</p> */}
                 </div>
             </div>
         )

@@ -35,14 +35,6 @@ function Search({setSearch, handleClick}) {
                         backgroundColor: "#e0e0e0"
                     }}
                 />
-                {/* <input
-                    type="text"
-                    id="poke-search"
-                    placeholder="Search a Pokemon"
-                    name="search"
-                    onChange={handleChange}
-                /> */}
-                {/* <button onClick={handleClick}>Search</button> */}
             </form>
         </div>
     )
