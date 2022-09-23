@@ -1,6 +1,7 @@
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 import SearchIcon from '@mui/icons-material/Search';
+import SportsMartialArtsIcon from '@mui/icons-material/SportsMartialArts';
 
 function Search({setSearch, handleClick}) {
 
@@ -19,7 +20,7 @@ function Search({setSearch, handleClick}) {
         <div>
             <form>
                 <IconButton type="submit" aria-label="search">
-                <SearchIcon style={{ fill: "red" }} />
+                    <SportsMartialArtsIcon style={{ fill: "white" }} />
                 </IconButton>
                 <TextField
                     id="search-bar"
