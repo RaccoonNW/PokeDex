@@ -19,7 +19,7 @@ function App() {
 
   function handleClickLeft(e) {
     // e.preventDefault()
-    fetch(`https://pokeapi.co/api/v2/pokemon/${searchLeft}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${searchLeft.toLowerCase()}`)
     .then((r) => r.json())
     .then((data) => setPokemonLeft(data))
     .catch(err => {
@@ -29,7 +29,7 @@ function App() {
 
   function handleClickRight(e) {
     // e.preventDefault()
-    fetch(`https://pokeapi.co/api/v2/pokemon/${searchRight}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${searchRight.toLowerCase()}`)
     .then((r) => r.json())
     .then((data) => setPokemonRight(data))
     .catch(err => {
