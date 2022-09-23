@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -438,6 +441,10 @@ body, html {
   padding-right: 30%;
   padding-bottom: 15%;
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: blue;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 26pt;
+  color: #f25500;
+  background: -webkit-linear-gradient(#ff6d00, #ffab00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

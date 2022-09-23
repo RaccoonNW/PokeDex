@@ -1,6 +1,5 @@
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
-import SearchIcon from '@mui/icons-material/Search';
 import SportsMartialArtsIcon from '@mui/icons-material/SportsMartialArts';
 
 function Search({setSearch, handleClick}) {
@@ -32,6 +31,9 @@ function Search({setSearch, handleClick}) {
                     variant="outlined"
                     label="Enter Pokemon Name"
                     size="small"
+                    style={{
+                        backgroundColor: "#e0e0e0"
+                    }}
                 />
                 {/* <input
                     type="text"

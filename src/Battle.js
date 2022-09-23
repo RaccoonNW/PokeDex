@@ -26,13 +26,16 @@ function Battle({pokemonLeft, pokemonRight, setHide}) {
 
         console.log(scoreLeft, scoreRight)
         if(scoreLeft < scoreRight) {
-            battleWinner = 'Right Wins!'
+            // battleWinner = 'Right Wins!'
+            battleWinner = pokemonRight.name + ' Wins!'
         }
         else if(scoreLeft > scoreRight) {
-            battleWinner = 'Left Wins!'
+            // battleWinner = 'Left Wins!'
+            battleWinner = pokemonLeft.name + ' Wins!'
         }
         else if(scoreLeft === scoreRight) {
-            battleWinner = 'Right Wins!'
+            // battleWinner = 'Right Wins!'
+            battleWinner = pokemonRight.name + ' Wins!'
         } else {
             battleWinner = "Didn't work!"
         }
